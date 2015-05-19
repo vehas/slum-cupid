@@ -1,0 +1,34 @@
+doctype html
+
+html(lang='en-us')
+  head
+    title Zenbase
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    // bower:css
+    // endbower
+    link(rel='stylesheet', href='./css/main.css')
+body(ng-app='app')
+  .menu
+    .li
+      a(ui-sref='home') cupid
+    .li
+      a(ui-sref='chef') chef
+    .li
+      a(ui-sref='project') project
+    .li
+      a(ui-sref='guard') guard
+    .li
+      a(ui-sref='delete') delete
+    .li
+      a(ui-sref='logout') logout
+
+  .suck Some thing to show
+  .h1 it dont suck at all
+  hr
+  h2  dont suck at all
+  div.site-wrapper(ui-view)
+    // bower:js
+    // endbower
+  script(src='./js/app.js')
